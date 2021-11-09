@@ -7,7 +7,7 @@ import React from 'react'
 function ChildComponent(props) {
     return (
         <div>
-            <button onClick = {props.sindhuHandler}>greet parent</button>
+            <button onClick = {() => props.praneshwarHandler('aryan')}>greet parent</button>
         </div>
     )
 }

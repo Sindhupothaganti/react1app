@@ -9,7 +9,7 @@ constructor(props) {
     super(props)
 
     this.state = {
-         parentName: 'Mommy'
+         parentName: 'Shahenshah'
     }
     this.greetParent = this.greetParent.bind(this)
 }
@@ -17,15 +17,15 @@ constructor(props) {
 /**
  * i want to pass the reference of this method as a property to the child
  */
-    greetParent(){
+    greetParent(childName){
         //alert('hello '+this.state.parentName)
-        alert(`Hello ${this.state.parentName}`) //string templates-- es6
+        alert(`hello ${this.state.parentName} from  ${childName}`) //string templates-- es6
     }
 
     render() {
         return (
             <div>
-                <ChildComponent sindhuHandler = {this.greetParent}/>   {/*i am passing the reference of greet parent method to the child via a props*/}
+                <ChildComponent praneshwarHandler = {this.greetParent}/>   {/*i am passing the reference of greet parent method to the child via a props*/}
             </div>
         )
     }
